@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #ffc200;
+}
+html {
+}
+body {
+    /* width: 1200px; */
+    margin: 0 auto;
+}
+.header {
+    position: relative;
+    background-color: #333;
+    height: 800px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 71% 100%, 41% 100%;
+    background-position: top right, top left;
+    /* display: none; */
+}
+.header__top {
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid #fff; */
+}
+.header__top img {
+    width: 12%;
+    display: inline-block;
+    /* margin-bottom: 5px; */
+}
+.header__top .nav {
+}
+.nav a,
+.nav i {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0 12px;
+}
+.nav a {
+    font-size: 18px;
+}
+.nav i {
+    padding-left: 32px;
+}
+.header__content {
+    /* border: 1px solid red; */
+    position: absolute;
+    width: 400px;
+    top: 30%;
+    left: 45%;
+    padding: 10px 14px;
+}
+.header__content h3 {
+    color: #ffc200;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header__content p {
+    color: #fff;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+/* Content1 */
+.content1 {
+    /* border: 1px solid red; */
+    font-family: "Grand Hotel", cursive;
+    /* display: none; */
+}
+.content1 .info {
+    width: fit-content;
+    text-align: center;
+    /* border: 1px solid blue; */
+    margin: 16px auto;
+}
+.content1 .info h4 {
+    padding: 12px 0;
+}
+.content1 .info p {
+    padding: 0px 20px 12px;
+}
+.productSeller {
+    /* display: flex; */
+}
+.productSeller .item {
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 12px 0;
+}
+.productSeller .item img {
+    /* display: block;
+   margin: 12px auto; */
+}
+.productSeller .item h4 {
+    font-weight: 700;
+    padding: 16px 0 0 0;
+}
+
+/* CONTENT 2 */
+.content2 {
+    background-color: #333;
+    padding: 32px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* display: none; */
+}
+
+.text {
+    padding: 24px 0;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.cardList {
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 111px;
+}
+
+.cardItem {
+    text-align: center;
+    border: 3px solid #fff;
+    border-radius: 50%;
+
+    padding: 26px 34px;
+}
+
+.cardItem p {
+    color: #fff;
+    margin-bottom: 0;
+}
+.cardItem p.number {
+    color: var(--primary-color);
+    font-size: 32px;
+}
+@media screen and (max-width:740px) {
+    .cardList {
+        flex-direction: column;
+    }
+    .cardItem{
+       margin-bottom: 20px;
+    }
+}
