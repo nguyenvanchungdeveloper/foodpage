@@ -20,7 +20,7 @@ body {
     background-repeat: no-repeat;
     background-size: 71% 100%, 41% 100%;
     background-position: top right, top left;
-    /* display: none; */
+    display: none;
 }
 .header__top {
     padding: 5px 20px;
@@ -76,7 +76,7 @@ body {
 .content1 {
     /* border: 1px solid red; */
     font-family: "Grand Hotel", cursive;
-    /* display: none; */
+    display: none;
 }
 .content1 .info {
     width: fit-content;
@@ -114,7 +114,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    /* display: none; */
+    display: none;
 }
 
 .text {
@@ -147,11 +147,40 @@ body {
     color: var(--primary-color);
     font-size: 32px;
 }
-@media screen and (max-width:740px) {
+@media screen and (max-width: 740px) {
     .cardList {
         flex-direction: column;
     }
-    .cardItem{
-       margin-bottom: 20px;
+    .cardItem {
+        margin-bottom: 20px;
     }
+}
+/* CONTENT 3 */
+.content3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 64px 24px;
+}
+.content3 .image {
+    width: 50%;
+    text-align: center;
+}
+.image img {
+    width: 50%;
+}
+.content3 .text {
+    width: 50%;
+    text-align: left ;
+}
+.text p{
+    margin: 24px 0;
+}
+.text button{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333;
 }
